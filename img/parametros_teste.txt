@@ -1,0 +1,13 @@
+Imagem Principal: Largura: 815		Altura: 819
+
+
+Imagens
+			X 		Y 		Largura 		Altura
+imgVende	220 	10 		339 			76
+imgCasa		100 	90 		638 			460
+
+
+------------------------------------------------------
+Textos
+			Fonte	Tipo		Tam		Cor			X		Y
+Texto1		Arial	Negrito		32		Azul		100		600
