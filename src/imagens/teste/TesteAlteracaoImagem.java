@@ -30,20 +30,22 @@ public class TesteAlteracaoImagem {
 		//Obtém o Graphics2D da imagem 1 (fundo), para desenhar sobre ela.
 		Graphics2D graphics = imgPrincipal.createGraphics();
 		
-		graphics.drawImage(imgVende, 220, 10, imgVende.getWidth(), imgVende.getHeight(), null); //339 , 76
-		graphics.drawImage(imgCasa, 100, 90, imgCasa.getWidth(), imgCasa.getHeight(), null); //638 , 460
+		graphics.drawImage(imgVende, 150, 2, imgVende.getWidth(), imgVende.getHeight(), null); //339 , 76
+		//graphics.drawImage(imgCasa, 6, 90, imgCasa.getWidth(), imgCasa.getHeight(), null); //638 , 460
+		graphics.drawImage(imgCasa, 6, 80, 400, 290, null); //319, 230
 		
-		graphics.setColor(Color.BLUE);
-        graphics.setFont(new Font("Arial", Font.BOLD, 32));
-        graphics.drawString("Teste Blue", 100, 600);
+		Color color = new Color(106,90,205);
+		graphics.setColor(color);
+        graphics.setFont(new Font("Brush Script", Font.BOLD, 42));
+        graphics.drawString("Teste Blue", 100, 400);
         
         graphics.setColor(Color.GREEN);
-        graphics.setFont(new Font("Arial", Font.BOLD, 32));
-        graphics.drawString("Teste Green", 100, 700);
+        graphics.setFont(new Font("Arial", Font.BOLD + Font.ITALIC, 32));
+        graphics.drawString("Teste Green", 100, 450);
         
-        printCenterString(graphics, "Texto Centro", imgPrincipal.getWidth(), 0, 750);
+        printCenterString(graphics, "Texto Centro", 652, 0, 500);
         
-        printRightString(graphics, "Texto direita", imgPrincipal.getWidth(), 0, 790);
+        printRightString(graphics, "Texto direita", imgPrincipal.getWidth(), 0, 650);
 		
 		graphics.dispose(); //Libera os recursos ocupados pela "Caneta"
 		 
